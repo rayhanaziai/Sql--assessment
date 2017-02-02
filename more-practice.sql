@@ -3,11 +3,7 @@
 
 
 -- Insert a Brand
-cars=# INSERT INTO brands (brand_id, name, founded, headquarters) 
-cars-# VALUES ('sub', 'Subaru', 1953, 'Tokyo')
-cars-# ;
-
-
+cars=# INSERT INTO brands (brand_id, name, founded, headquarters) VALUES ('sub', 'Subaru', 1953, 'Tokyo, Japan'); 
 
 -- Insert Models
 
@@ -25,7 +21,7 @@ cars(# );
 
 -- Insert Awards
 
-cars=# INSERT INTO awards(id, name, year, winner_id) SELECT 2, 'IIHS Safety Award', 2015, model_id FROM models                                    
+cars=# INSERT INTO awards(id, name, year, winner_id) SELECT 1, 'IIHS Safety Award', 2015, model_id FROM models                                    
 Where name = 'Chevrolet' AND year = 2015;
 cars=# INSERT INTO awards(id, name, year, winner_id) SELECT 2, 'IIHS Safety Award', 2015, model_id FROM models                                    
 cars-# Where name = 'Subaru' AND year = 2015;
